@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYUKA</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./style/normalize.css">
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <!-- GO TO TOP -->
+    <div id="toTop">
+        <img src="./img/Couteau.png" alt="totop">
+    </div>
+
+    <!-- HEADER RESPONSIVE AVEC NAVBAR CUSTOM -->
+    <!--                                      -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Myuka.</a>
+
+            <!-- Liste des sections -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a id="toSec1" class="nav-link">Code-Barre</a>
+                </li>
+                <li class="nav-item">
+                    <a id="toSec2" class="nav-link">Info</a>
+                </li>
+                <li class="nav-item">
+                    <a id="toSec3" class="nav-link">Ingrédients</a>
+                </li>
+                <li class="nav-item">
+                    <a id="toSec4" class="nav-link">Descriptions</a>
+                </li>
+                <li class="nav-item">
+                    <a id="toSec5" class="nav-link">Nutrition</a>
+                </li>
+                <li class="nav-item">
+                    <a id="toSec6" class="nav-link">Lorem</a>
+                </li>
+                <li class="nav-item">
+                    <a id="toSec7" class="nav-link">Lorem</a>
+                </li>
+            </ul>
+
+            <!-- Button type "burger" responsive -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Contenu de la page -->
+    <!--                    -->
+
+    <!-- Formulaire de scan produit -->
+    <section class="scan" id="Sec1">
+        <form class="scan">
+            <h1>Scannez votre produit</h1>
+        
+            <div class="input">
+                <label for="codeProduit">Code barre produit:</label><br>
+                <input type="text" id="codeProduit" name="codeBarre" />   
+            </div>
+            <div class="but">
+                <button type="submit" id="submit">
+                    Scanner
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Titre du produit -->
+    <section id="Sec2">
+        <div class="info">
+            <h1>Prince Chocolat - Lu - 300 g</h1>
+            <h2>Code-barres: 7622210449283 (EAN / EAN-13)</h2><br>
+
+            <h3><u>Caractéristiques du produit</u></h3><br>
+
+            <p><b>Dénomination générique :</b> BISCUITS FOURRÉS (35%) PARFUM CHOCOLAT <br>
+            <b>Quantité :</b> 300 g <br>                
+            <b>Conditionnement :</b> Plastique, Film en plastique, paquet, mondelez, Etui en carton <br>            
+            <b>Marques :</b> Lu <br>            
+            <b>Catégories :</b> Snacks, Snacks sucrés, Biscuits et gâteaux, Biscuits, Biscuits au chocolat <br>            
+            <b>Labels, certifications, récompenses :</b> en:Sans conservateurs <br>            
+            <b>Lien vers la page du produit sur le site officiel du fabricant :</b> https://www.lu.fr/prince <br>            
+            <b>Magasins :</b> Carrefour Market, Magasins U, Auchan, Intermarché, Carrefour, Casino, Leclerc, Cora, Bi1 <br>            
+            Pays de vente : Algérie, Belgique, France, Polynésie française, Allemagne, Guadeloupe, Hongrie, Luxembourg, Martinique, Maroc, Nouvelle-Calédonie, Portugal, La Réunion, Espagne, Suisse, États-Unis</p>
+        </div>
+    </section>
+
+    <!-- Image produit & ingrédients -->
+    <section id="Sec3">
+        <div class="imging">
+            <div class="imgProd">
+                <img src="https://static.openfoodfacts.org/images/products/762/221/044/9283/front_fr.429.400.jpg" alt="imageProduit">
+            </div>
+            <div class="ingProd">
+                <h2>Ingrédients</h2><br>
+
+                <p><b>Liste des ingrédients:</b><br>
+                    céréales 50,7% (farine de blé 35%, farine de blé complète 15,7%), sucre, huiles végétales (palme, colza), cacao maigre en poudre 4,5%, sirop de glucose, amidon de blé, poudre à lever (carbonate acide d'ammonium, carbonate acide de sodium, diphpsphate disodique), émulsifiant (lécithine de soja, lécithine de tournesol), sel, lait écrémé en poudre, lactose et protéines de lait, arômes.
+                    <b>Substances ou produits provoquant des allergies ou intolérances :</b> Œufs, Gluten, Lait, Soja <br>
+                    <b>Traces éventuelles :</b> Œufs <br>
+                    <b>Analyse des ingrédients :</b> <br></p>
+            </div> 
+        </div>
+        <div class="anaProd">
+            <div class="logoP truc">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon" aria-hidden="true" focusable="false"><path d="M0 0h24v24H0z" fill="none"></path><path d="M11.889 3.84c-3.225 0-5.94 2.196-6.748 5.168A2 2 0 005 9a2 2 0 00-2 2 2 2 0 002 2 2 2 0 00.072-.004C5.772 17.124 8.46 20 11.89 20c3.434 0 6.126-2.885 6.82-7.023A2 2 0 0019 13a2 2 0 002-2 2 2 0 00-2-2 2 2 0 00-.355.033c-.8-2.985-3.522-5.193-6.756-5.193zM9.5 8a3.5 3.5 0 012.447 1.002A5 5 0 0112 9a5 5 0 01.055.002A3.5 3.5 0 0114.5 8a3.5 3.5 0 013.5 3.5 3.5 3.5 0 01-1.002 2.447A5 5 0 0117 14a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 01.002-.049A3.5 3.5 0 016 11.5 3.5 3.5 0 019.5 8z"></path><circle r="1" cy="11.5" cx="9.5"></circle><path d="M9 17.5a3.07 3.167 0 012.998-2.5A3.07 3.167 0 0115 17.5h-1a2.047 2.111 0 00-2-1.666 2.047 2.111 0 00-2 1.666z"></path><circle cx="14.5" cy="11.5" r="1"></circle></svg>
+                <div class="txt">
+                    <p>Huile de Palme</p>
+                </div>
+            </div>
+            <div class="logoP truc">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon" aria-hidden="true" focusable="false"><path d="M20 4S9.57 4.53 5.857 8.242c-2.385 2.385-2.683 6.076-.9 8.791 2.905-5.897 7.596-8.835 13.629-11.619C13.77 9.117 8.603 12.49 6.242 18.49c2.747 2.37 6.91 2.258 9.516-.347C19.47 14.43 20 4 20 4z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+                <div class="txt">
+                    <p>Non végétalien</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section valeurs nutritionnelles et conditionnement -->
+    <section id="Sec4">
+        <div class="flex">
+            <div class="nutri">
+                <h1>Valeurs nutritionnelles</h1>
+                <div class="tabNutri">
+                    <table id="tableauNutritionnel" class="tableNut">
+                        <caption>Informations nutritionnelles</caption>
+                            <!--  Tableau valeurs nutritionnelle -->
+        
+                            <!-- Contenu du titre du tableau -->
+                            <thead class="nutriment_header">
+                                <tr>
+                                    <th scope="col">Informations nutritionnelles</th>
+                                    <th class="nutriment_value " scope="col">Tel que vendu<br>pour 100 g / 100 ml</th>
+                                    <th class="nutriment_value " scope="col">Préparé<br>pour 100 g / 100 ml</th>
+                                    <th class="nutriment_value " scope="col">Préparé<br>par portion (20g)</th>
+                                </tr>
+                            </thead>
+                            <!-- Contenu du tableau -->
+                            <tbody>
+                                <tr id="nutriment_energy-kj_tr" class="nutriment_main">
+                                    <td class="nutriment_label">
+                                        Énergie (kJ)
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        1&nbsp;955 kj
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                </tr>
+                
+                                <tr id="nutriment_energy-kcal_tr" class="nutriment_main">
+                                    <td class="nutriment_label">
+                                        Énergie (kcal)
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        465 kcal
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                </tr>
+                
+                                <tr id="nutriment_energy_tr" class="nutriment_main">
+                                    <td class="nutriment_label">
+                                        Énergie
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        1&nbsp;955 kj<br>(465 kcal)
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        391 kj<br>(93 kcal)
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        78,2 kj<br>(19 kcal)
+                                    </td>
+                                </tr>
+                
+                                <tr id="nutriment_fat_tr" class="nutriment_main">
+                                    <td class="nutriment_label">
+                                        Matières grasses / Lipides
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        17 g
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                </tr>
+                
+                                <tr id="nutriment_saturated-fat_tr" class="nutriment_sub">
+                                    <td class="nutriment_label">
+                                        dont Acides gras saturés
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        5,6 g
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                </tr>
+                
+                                <tr id="nutriment_carbohydrates_tr" class="nutriment_main">
+                                    <td class="nutriment_label">
+                                        Glucides
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        69 g
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                </tr>
+                
+                                <tr id="nutriment_sugars_tr" class="nutriment_sub">
+                                    <td class="nutriment_label">
+                                        dont Sucres
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        32 g
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                </tr>
+                
+                            
+                
+                                <tr id="nutriment_fiber_tr" class="nutriment_main">
+                                    <td class="nutriment_label">
+                                        Fibres alimentaires
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        4 g
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                </tr>
+                
+                            
+                
+                                <tr id="nutriment_proteins_tr" class="nutriment_main">
+                                    <td class="nutriment_label">
+                                        Protéines
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        6,4 g
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                </tr>
+                
+                                <tr id="nutriment_salt_tr" class="nutriment_main">
+                                    <td class="nutriment_label">
+                                        Sel
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        0,58 g
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                </tr>
+                
+                                <tr id="nutriment_sodium_tr" class="nutriment_sub">
+                                    <td class="nutriment_label">
+                                        Sodium
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        0,232 g
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        ?
+                                    </td>
+                                </tr>
+                
+                                <tr id="nutriment_nutrition-score-fr_tr" class="nutriment_main">
+                                    <td class="nutriment_label">
+                                        <a href="/nutriscore" title="$product_ref->{nutrition_score_debug}">Score nutritionnel - France</a>
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        15 
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        15 
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        15 
+                                    </td>
+                                </tr>
+                
+                                <tr id="nutriment_nutriscore_tr" class="nutriment_sub">
+                                    <td class="nutriment_label">
+                                        Nutri-Score
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        D
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        D
+                                    </td>
+                                    <td class="nutriment_value ">
+                                        D
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+            <div class="condi">
+                <h2>Conditionnement</h2>
+                <h3><b>Instruction de recyclage et/ou informations d'emballage :</b>
+                    1 Film plastique à jeter, 1 étui carton à recycler</h3> <br>
+                <h3>Parties de l'emballage :</h3>
+                <table id="packagings_table">
+                    <caption>Parties de l'emballage&nbsp;:</caption>
+                    <tbody><tr><th scope="col">Nombre</th>
+                    <th scope="col">Forme</th>
+                    <th scope="col">Matière</th>
+                    <th scope="col">Recyclage</th>
+                    </tr><tr>
+                        <td>1</td>
+                        <td>Film
+                        </td>
+                        <td>Plastique</td>
+                        <td>Jeter</td>
+                    </tr>
+                
+                    <tr>
+                        <td>1</td>
+                        <td>Étui
+                        </td>
+                        <td>Carton</td>
+                        <td>Recycler</td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Label -->
+    <section id="Sec5" class="sec3">
+        <div class="flex1">
+            <div class="lab1">
+                <h2>Nutriscore D</h2>
+                <p>Mauvaise qualité nutritionnelle</p>
+                <div class="imgNutri">
+                    <img src="https://static.openfoodfacts.org/images/misc/nutriscore-d.svg" alt="Note nutritionnelle NutriScore : D">
+                </div>
+            </div>
+            <div class="lab2">
+                <h2>Nova 4</h2>
+                <p>Aliments ultra-transformés</p>
+                <div class="imgNutri nova">
+                    <img class="" src="https://static.openfoodfacts.org/images/attributes/nova-group-4.svg" alt="Nova score 4">
+                </div>
+            </div>
+            <div class="lab3">
+                <h2>Éco-score D</h2>
+                <p>Impact environnemental élevée</p>
+                <div class="imgNutri">
+                    <img src="https://static.openfoodfacts.org/images/attributes/ecoscore-d.svg" alt="Eco score 4">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECTION VIDE -->
+    <section id="Sec6">
+        <h2>lorem</h2>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus repellat veniam pariatur, deserunt officia ea, totam vitae enim consequuntur perferendis eum laborum vel? Sapiente odit voluptatibus iste aliquid minus?
+            Dignissimos aspernatur blanditiis est voluptates velit a illum atque eos molestiae soluta eum quia, culpa deleniti in quo, exercitationem porro inventore sequi earum obcaecati voluptate. Impedit laborum temporibus molestias distinctio!
+            Minus voluptatibus fugiat nesciunt architecto, tenetur non laudantium dolorem voluptatem veniam fugit, perspiciatis autem eveniet nihil. Error, vitae rem quidem consequuntur fugit nisi explicabo nam inventore, possimus assumenda eligendi excepturi?
+            Reiciendis quis ad magnam sunt, blanditiis officia voluptates molestias possimus laborum nulla, labore incidunt? Consequuntur laboriosam autem deleniti tenetur accusamus assumenda commodi et nam! Molestiae voluptatibus aliquam aspernatur rem debitis.
+            Dicta obcaecati reprehenderit corrupti inventore suscipit doloribus odio praesentium quae aliquam iste temporibus accusantium alias, delectus numquam expedita laudantium aperiam odit sed fugit explicabo est? Quidem repudiandae voluptatem et reiciendis?
+            Similique ratione incidunt doloribus? Mollitia eos aut unde harum sapiente cumque quam nesciunt ad pariatur eligendi earum maiores at iure ab, omnis laborum magni nam ullam inventore atque! Excepturi, repellendus.
+            Minus dicta velit architecto esse reiciendis? Iste est ullam illum laudantium explicabo, unde ab, magni reprehenderit nisi repellendus tenetur provident repudiandae repellat beatae quasi pariatur, voluptates dolor ducimus mollitia aliquid.
+            Eveniet porro tempora provident omnis alias, quaerat doloremque reiciendis, totam ex eum impedit ipsam voluptatum! Necessitatibus omnis tempora quod suscipit rerum aut velit beatae eligendi itaque assumenda, vitae sunt perspiciatis?
+            Illo ipsum possimus et, in reiciendis eaque at minus, ipsa ducimus quae, enim ab molestiae! Tenetur quibusdam inventore iste, quas dignissimos nulla doloremque pariatur possimus sapiente eum. Illum, commodi cumque!
+            Fugiat enim aperiam voluptate quos minima. Reiciendis id temporibus blanditiis, labore magnam, repellat corporis iusto illo consequuntur dolorem quos aliquid deleniti, possimus qui inventore quas provident non obcaecati commodi dolore!</p>
+        </div>
+    </section>
+
+    <!-- SECTION VIDE -->
+    <section id="Sec7">
+        <h2>lorem</h2>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus repellat veniam pariatur, deserunt officia ea, totam vitae enim consequuntur perferendis eum laborum vel? Sapiente odit voluptatibus iste aliquid minus?
+            Dignissimos aspernatur blanditiis est voluptates velit a illum atque eos molestiae soluta eum quia, culpa deleniti in quo, exercitationem porro inventore sequi earum obcaecati voluptate. Impedit laborum temporibus molestias distinctio!
+            Minus voluptatibus fugiat nesciunt architecto, tenetur non laudantium dolorem voluptatem veniam fugit, perspiciatis autem eveniet nihil. Error, vitae rem quidem consequuntur fugit nisi explicabo nam inventore, possimus assumenda eligendi excepturi?
+            Reiciendis quis ad magnam sunt, blanditiis officia voluptates molestias possimus laborum nulla, labore incidunt? Consequuntur laboriosam autem deleniti tenetur accusamus assumenda commodi et nam! Molestiae voluptatibus aliquam aspernatur rem debitis.
+            Dicta obcaecati reprehenderit corrupti inventore suscipit doloribus odio praesentium quae aliquam iste temporibus accusantium alias, delectus numquam expedita laudantium aperiam odit sed fugit explicabo est? Quidem repudiandae voluptatem et reiciendis?
+            Similique ratione incidunt doloribus? Mollitia eos aut unde harum sapiente cumque quam nesciunt ad pariatur eligendi earum maiores at iure ab, omnis laborum magni nam ullam inventore atque! Excepturi, repellendus.
+            Minus dicta velit architecto esse reiciendis? Iste est ullam illum laudantium explicabo, unde ab, magni reprehenderit nisi repellendus tenetur provident repudiandae repellat beatae quasi pariatur, voluptates dolor ducimus mollitia aliquid.
+            Eveniet porro tempora provident omnis alias, quaerat doloremque reiciendis, totam ex eum impedit ipsam voluptatum! Necessitatibus omnis tempora quod suscipit rerum aut velit beatae eligendi itaque assumenda, vitae sunt perspiciatis?
+            Illo ipsum possimus et, in reiciendis eaque at minus, ipsa ducimus quae, enim ab molestiae! Tenetur quibusdam inventore iste, quas dignissimos nulla doloremque pariatur possimus sapiente eum. Illum, commodi cumque!
+            Fugiat enim aperiam voluptate quos minima. Reiciendis id temporibus blanditiis, labore magnam, repellat corporis iusto illo consequuntur dolorem quos aliquid deleniti, possimus qui inventore quas provident non obcaecati commodi dolore!</p>
+        </div>
+    </section>
+
+    <!-- Création du footer -->
+    <!--                    -->
+    <footer class="flex">
+        <div class="copyright">
+            <a href="#">Copyright@trucmuche</a>
+        </div>
+        <div class="credit">
+            <a href="#">Crédit@trucmuche</a>
+        </div>
+    </footer>
+
+    <!-- SCRIPT JS CUSTOM -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
